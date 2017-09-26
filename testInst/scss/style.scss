@@ -1,0 +1,228 @@
+$dark: #3a365a;
+$white: #fff;
+$text: #262e3e;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic');
+
+// @font-face {
+//   //font-family: 'FontAwesome';
+//   src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+//   src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+.fa {
+  font-size: 1.3rem
+}
+.fa-heart {
+	color: #ff4c4f;
+	font-size: 1.5rem;
+}
+html,body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+*{
+	box-sizing: border-box;
+}
+main {
+	width: 100%;
+	height: 100%;
+	background: #ff9966;
+	background: linear-gradient(to right, #ff5e62, #ff9966);
+}
+.container {
+	width: 1170px;
+	max-width: 100%;
+	height: 100%;
+	min-height: 100vh; 
+	background-color: rgba(255,255,255,0.4);
+	margin: 0 auto;
+	padding-bottom: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+}
+.box {
+	background-color: $white;
+	width: 80%;
+	height: 350px;
+	margin: 35px auto 0;
+	display: flex;
+	justify-content: space-between;
+}
+.photo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5%;
+	background-size: cover;
+	overflow: hidden;
+	img {
+		width: 306px;
+	}
+}
+.discription {
+	width: 60%;
+}
+.text {
+	color: $text;
+	height: 60%;
+	padding: 5%;
+}
+.line {
+	display: block;
+	margin: 0 auto;
+	margin-top: 25px;
+	background-color: $dark;
+	height: 2px;
+	width: 90%;
+}
+.caption {
+	display: flex;
+	justify-content: space-between;
+}
+.date {
+	padding: 10px;
+	padding-left: 3rem;
+	font-size: 0.9rem;
+	display: flex;
+	align-items: center;
+	.fa {
+		margin-right: 7px;
+	}
+}
+.like {
+	padding: 10px;
+	padding-right: 3rem;
+	font-size: 1.1rem;
+	display: flex;
+	align-items: center;
+	.fa {
+		margin-left: 10px;
+	}
+}
+.btn {
+	margin-top: 45px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: $dark;
+	color: $white;
+	width: 320px;
+	height: 50px;
+	font-weight: 600;
+	letter-spacing: 1.3px;
+	font-size: 15px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+.up { 
+	cursor: pointer;
+	position: fixed;
+	bottom: 15%;
+	right: 7%;
+	display: block;
+	width: 55px;height: 55px;
+	background-color: $dark;
+}
+.up:before {
+	content: '';
+	display: block;
+	background-color: white;
+	width: 40px;
+	height: 4.5px;
+	margin-top: 25px;
+	margin-left: -4px;
+	transform: rotate(125deg);
+}
+.up:after {
+	content: '';
+	display: block;
+	background-color: white;
+	width: 40px;
+	height: 4.5px;
+	margin-top: -5px;
+	margin-left: 17px;
+	transform: rotate(-125deg);
+}
+
+@media screen and (max-width: 1366px) {
+	.container {
+		width: 992px
+	}
+	.up {
+		right: 5%;
+		bottom: 10%;
+	}
+}
+@media screen and (max-width: 1031px) {
+	.up {
+		right: 10px
+	}
+}
+@media screen and(max-width:846px){
+	.box {
+		height: 250px
+	}
+	.photo img {
+		width: 210px
+	}
+}
+@media screen and(max-width:768px){
+	body {
+		font-size: 16px
+	}
+	.up {
+		display: none
+	}
+	.box {
+		height: 200px;
+		width: 90%;
+	}
+	.photo img {
+		width: 180px
+	}
+	.date {
+		padding-left: 1.5rem
+	} 
+	.like {
+		padding-right: 1.5rem;
+		.fa {margin-left: 5px;}
+	}
+}
+@media screen and(max-width:576px){
+	.box {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 400px;
+		width: auto;
+		padding: 2% 2% 0;
+	}
+	.photo {
+		margin-left: 0;
+		img {
+		width: 306px;
+		height: auto;
+		}
+	}
+	.discription {
+		width: 100%;
+		max-width: 360px;
+	}
+	.text {
+		width: 100%;
+		padding-top: 0;
+	}
+	.line {
+		margin-top: 0
+	}
+	.btn {
+		margin-top: 30px
+	}
+}
