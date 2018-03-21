@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+html, body {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  overflow-x:hidden; 
+}
+body {
+	position: relative;
+  background-color: #323140;
+}
+.container, .container-fluid{
+  display: flex;
+  -webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-fluid {
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.bg {
+	text-transform: uppercase;
+	font-weight: 900;
+	line-height:1;
+	position: absolute;
+	z-index: -1;
+}
+section#main {
+  height: 100vh;
+  min-height: 1000px;
+}
+section#main h1 {
+	text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3rem;
+  /* margin-top: 20%; */
+  margin-top: 200px;
+}
+section#main p {
+	text-align: center;
+	margin-bottom: 70px;
+	font-size: 1.25rem;
+}
+section#main .bg {
+	opacity: 0.1;
+	font-size: 50rem;
+	left: -10%;
+	overflow-x: hidden;
+	display: block;
+	min-width: 300px;
+}
+section#items {
+	min-height: 768px;
+	height: 100%;
+	margin-bottom: 10%;
+}
+h2 {
+	font-size: 3rem;
+	opacity: 0.5;
+	-webkit-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+}
+h2:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.items_flex {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.items_flex li {
+	list-style-type: none;
+}
+.item_tab.active>h2 {
+	color: #fff;
+	opacity: 1;
+}
+.info {
+	width: 50%;
+	margin-top: 30px;
+	animation: lslide 0.8s ease-in-out;
+}
+.info>h2{
+	opacity: 1;
+	display: inline-block;
+	font-size: 3.5rem;
+}
+section#items .bg {
+	color: #b28fa9;
+	opacity: 0.3;
+	font-size: 50rem;
+	left: 0;
+	margin-left: 10%;
+	line-height: 0.7;
+	overflow-y: hidden;
+	animation: slide_bg 1s ease-in-out;
+}
+.item_cont {
+	display: none;
+}
+.item_cont.active {
+	display: flex;
+	justify-content: flex-end;
+}
+
+@keyframes slide_bg {
+		0% {left: -100%}
+		70% {left: 20%}
+}
+@keyframes lslide {
+		0% {margin-right: -100%}
+}
+
+
+@media screen and (max-width: 576px) {
+  section#main {
+  	min-height: 640px;
+  	height: 90%;
+  }
+	 section#main h1 {
+  	font-size: 1.4rem;
+  	margin-top: 10%;
+  }
+  section#main p {
+		margin-bottom: 70px;
+		font-size: 1rem;
+	}
+	section#main .bg {
+		left: -15%;
+	}
+	section#items {
+		min-height: 768px;
+	}
+	h2 {
+		font-size: 2rem;
+		margin-top: 10px;
+	}
+	.info {
+	margin-left: 30px;
+	}
+	.info>h2{
+		margin-bottom: 0;
+	}
+	section#items .bg {
+		font-size: 35rem;
+		left: -5%;
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  section#main .bg {
+		font-size: 35rem;
+		left: -15%;
+		top: 3%;
+	}
+	section#main h1 {
+  	margin-top: 15%;
+  }
+  .items_flex {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		padding: 0;
+	}
+	h2 {
+		font-size: 3rem;
+		margin-top: 5px;
+		text-align: center;
+	}
+	.info {
+	width: 100%;
+	margin-left: 50px;
+	}
+	.info>h2{
+		margin: 0 auto;
+		margin-bottom: 50px;
+		display: block;
+	}
+	section#items {
+		min-height: 1400px;
+	}
+  
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+  section#main {
+  	min-height: 700px;
+	}
+    section#main .bg {
+		font-size: 25rem;
+		top: 10%;
+  }
+  h2 {
+  	font-size: 2rem;
+  }
+  .info {
+	width: 80%;
+	}
+	.info>h2{
+		margin: 0 auto;
+	}
+	
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
