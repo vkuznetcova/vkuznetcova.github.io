@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>QR-code создать</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section>
+
+		<div class="text">
+				<input id="text" type="text" value="" placeholder="Введите текст">
+		</div>
+
+		<div class="color">
+			<span>Выберите цвет</span>
+				<div class="colors-drop">
+				  <div class="dropdown">
+				    <p><span class="colors-text colors-text_black">черный</span>
+				    	<input type="hidden" value="#000000">
+				    </p>
+				  </div>
+				  <ul class="colors-menu">
+				    <li><span class="colors-text colors-text_black">черный</span><input type="hidden" value="#000000"></li></li>
+				    <li><span class="colors-text colors-text_purple">фиолетовый</span><input type="hidden" value="#574b90"></li></li>
+				    <li><span class="colors-text colors-text_red">красный</span><input type="hidden" value="#cc3512"></li></li>
+				    <li><span class="colors-text colors-text_green">зеленый</span><input type="hidden" value="#2ed573"></li>
+				    <li><span class="colors-text colors-text_orange">оранжевый</span><input type="hidden" value="#fa8231">
+				    	</li>
+				  </ul>
+				</div>
+		</div>
+
+		<div class="size">
+			<span>Выберите размер</span>
+			<div class="sizes-drop">
+				  <div class="dropdown">
+				    <p><span class="sizes-text">большой</span>
+				    <input type="hidden" value="320"></p>
+				  </div>
+				  <ul class="sizes-menu">
+				    <li><span class="sizes-text">большой</span>
+				    <input type="hidden" value="320"></li>
+				    <li><span class="sizes-text">маленький</span>
+				    	<input type="hidden" value="250"></li>
+				  </ul>
+				</div>
+		</div>
+
+		<div class="go">
+			<input type="submit" value="ГОТОВО">
+		</div>
+
+		<!-- <div class="download">
+			<a download> <input type="button" value="СКАЧАТЬ"></a>
+		</div> -->
+
+	</section>
+
+	<div class="qr">
+			<div id="qrcode">
+			</div>
+		</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="js/qr.js"></script>
+  	<script src="js/main.js"></script>
+  
+</body>
+</html>
