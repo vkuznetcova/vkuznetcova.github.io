@@ -1,6 +1,7 @@
 $inst = function() {
 	var token = '502797215.39d6786.ced7786ebeaa4e79a66be031a7f497c3', 
-    userid = 502797215;
+    userid = 502797215,
+    discription='comment';
 $.ajax({
 	url: myurl,
 	dataType: 'jsonp',
