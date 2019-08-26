@@ -18,10 +18,10 @@ $.ajax({
   		  date = date.getDate(),
   		  time = date + ' ' + month + ' ' + year;
 
-  		 if ((response.data[i].caption.text)==='.')
-  		  	 var discription = 'Нет описания';
-  		  	else 
-  		  		var discription = response.data[i].caption.text;
+  		if ((response.data[i].caption))	
+  		  	var discription = response.data[i].caption.text;
+  		  else
+  		  	var discription = 'Нет описания';
 
 			 $('.box'+i+'>.photo').append('<img src="'+response.data[i].images.standard_resolution.url+'">');
 		   $('.box'+i).find('.text').append('<p>'+discription+'</p>');
