@@ -1545,7 +1545,10 @@ body {
 }
 
 @media (max-width: 576px) {
-
+  .container {
+    width: 100%;
+    overflow-x: hidden;
+  }
   .carousel_main {
     padding: 100px 0px;
 }
@@ -1573,10 +1576,13 @@ body {
   }
   .project-nav {
     width: 100%;
-    padding: 30px 10px;
+    padding: 30px 10px 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .project-nav_item {
     padding: 5px 15px;
+    margin-bottom: 15px;
   }
 
   .project-box {
@@ -1617,7 +1623,7 @@ body {
     margin-top: 0;
   }
   .partners {
-    padding: 0;
+    padding: 0 30px 0 0;
   }
   .partners-item:nth-child(1) {
     margin: 0;
@@ -1626,7 +1632,7 @@ body {
     margin: 0;
   }
   .partners-item_img {
-    transform: scale(0.7);
+    transform: scale(0.6);
     &:hover {
       transform: scale(0.8);
     }
@@ -1634,4 +1640,8 @@ body {
   .footer {
     padding: 50px 0 0;
   }
+  .footer-logo .header_logo {
+    width: 155px;
+}
+
 }
