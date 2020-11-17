@@ -1344,7 +1344,8 @@ body {
 }
 
 .partners-item {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 25%;
 }
 
@@ -1951,7 +1952,7 @@ body {
     margin-top: 0;
   }
   .partners {
-    padding: 0 30px 0 0;
+   padding: 0;
   }
   .partners-item:nth-child(1) {
     margin: 0;
