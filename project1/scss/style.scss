@@ -185,7 +185,10 @@ body {
   width: 100%;
   margin: 0;
   border-bottom: 1px solid $white;
-  padding-top: 45px;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   &:hover {
     color: $white;
     background: #d3c1ad;
