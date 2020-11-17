@@ -1080,8 +1080,10 @@ body {
   padding: 155px 0;
   box-sizing: border-box;
   &-item {
-    display: block;
     width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &_img {
       transition: transform 0.4s ease-in-out;
       &:hover {
@@ -1541,9 +1543,6 @@ body {
   .footer-info_link:nth-of-type(1) {
     border: none;
   }
-  // .footer-info_link:first-child {
-  //   border-left: none;
-  // }
 }
 
 @media (max-width: 576px) {
