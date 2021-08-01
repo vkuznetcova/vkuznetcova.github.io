@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <title>DataDuck Test</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="entry">
+      <input type="text" name="entry__search" class="entry__search">
+      <button class="entry__login">
+        <svg width="24px" height="24px" viewBox="0 -3 12 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.6,16 L1.6,16 C0.639783,16 0,15.472164 0,14.422467 C0,12.120092 2.062141,10.002624 4.4,10.002624 L5,10.002624 L5,9.06557 C3.757807,8.43859 3,7.31631 3,5.96358 L3,4.37417 C3,1.91002 5.025756,0 7.6,0 C10.03996,0 12,1.87752 12,4.1755 L12,5.96358 C12,7.33842 11.2174,8.53592 10,9.08598 L10,10.002624 L10.6,10.002624 C13.00643,10.002624 15,12.086237 15,14.422467 C15,15.584464 14.25516,16 12.6,16 Z M10.6,11.002624 L9.5,11.002624 C9.22386,11.002624 9,10.778766 9,10.502624 L9,8.74503 C9,8.52945 9.13818,8.33814 9.34283,8.27038 C10.34498,7.93854 11,7.03223 11,5.96358 L11,4.1755 C11,2.43965 9.49707,1 7.6,1 C5.565316,1 4,2.47588 4,4.37417 L4,5.96358 C4,6.99975 4.624336,7.84145 5.691221,8.28304 C5.878122,8.3604 6,8.54275 6,8.74503 L6,10.502624 C6,10.778766 5.776142,11.002624 5.5,11.002624 L4.4,11.002624 C2.620438,11.002624 1,12.666538 1,14.422467 C1,14.872819 1.154154,15 1.6,15 L12.6,15 C13.77631,15 14,14.875207 14,14.422467 C14,12.628881 12.44402,11.002624 10.6,11.002624 Z">
+          </path>
+        </svg>
+        Войти
+      </button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="side__left">
+      <div class="top">
+        <h1 class="top__header">Начните торговать прямо сейчас</h1>
+        <ul>
+          <li>
+            <p class="top__txt">Нет спреда — торгуйте с прозрачными и точными котировками
+            </p>
+          </li>
+          <li>
+            <p class="top__txt">Достаточно депозита в $10, чтобы начать торговать</p>
+          </li>
+        </ul>
+      </div>
+
+      <form action="#" name="form" class="form">
+        <div class="form__inp-wrp">
+          <div class="section-err"></div>
+          <input type="email" id="form__inp1" name="form__inp1" class="form__inp">
+          <label for="form__inp1">Ваш e-mail</label>
+        </div>
+        <div class="form__inp-wrp">
+          <div class="section-err"></div>
+          <input type="password" name="form__inp2" id="form__inp2" class="form__inp">
+          <label for="form__inp2">Придумайте пароль</label>
+        </div>
+        <div class="form__value">
+          <p class="form__value-txt">Валюта для ввода и вывода средств</p>
+          <div class="form__value-wrp">
+            <input type="radio" name="form-value" id="radio1" value="p" checked>
+            <label for="radio1">Р</label>
+            <input type="radio" name="form-value" id="radio2" value="s">
+            <label for="radio2">S</label>
+            <input type="radio" name="form-value" id="radio3" value="e">
+            <label for="radio3">E</label>
+          </div>
+        </div>
+        <label class="form__rules">
+          <div class="section-err"></div>
+          <input type="checkbox" name="form__rules">
+          <span class="form__rules-control"></span>
+          <p class="form__rules-txt">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</p>
+        </label>
+        <div class="section-err-main">Учётная запись с указанным e-mail уже существует</div>
+        <button type="submit" class="form__btn">Зарегистрироваться</button>
+      </form>
+
+    </div>
+    <div class="side__right"></div>
+  </div>
+</body>
+
+</html>
