@@ -289,6 +289,7 @@ html {
       width: 0;
       height: 0;
       margin: 0;
+      display: none;
       &:checked + label {
         border: 1px solid #20a86b;
         background: #0b172a;
